@@ -10,7 +10,6 @@ const dots = item.length;
 var currentDot = 1;
 
 btnPrev.onclick = function () {
-    console.log("a");
     position += movePosition;
     setPosition();
     currentDot--;

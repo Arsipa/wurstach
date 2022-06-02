@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    background: var(--white);
 }
 
 .wrapper {
@@ -409,4 +410,75 @@ h2.centered {
     color: inherit;
     font-size: 20px;
     line-height: 23px;
+}
+.form{
+    background: var(--white);
+    border-radius: 10px;
+    padding: 30px 50px;
+    position: relative;
+    width: 600px;
+}
+.form__inputs{
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    flex-direction: column;
+}
+.form__inputs input{
+    padding: 10px;
+    font-size: 26px;
+    background: var(--white);
+    border: 2px solid var(--gray);
+    border-radius: 5px;
+}
+.form button[type=submit]{
+    background: var(--green);
+    border-radius: 5px;
+    padding: 20px 40px;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: var(--white);
+    border: 1px solid var(--gray);
+}
+.forgot-password{
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+}
+.close-form {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    
+}
+.close-form img{
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+}
+.form__title{
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+fieldset{
+    border: none;
+}
+.authorization{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.9);
+}
+.hidden{
+    display: none;
 }

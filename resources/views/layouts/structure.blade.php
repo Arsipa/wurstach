@@ -32,8 +32,8 @@
                         <img src="img/search.svg" alt="Лупа">
                         <input type="search" name="search" id="search" placeholder="Поиск...">
                     </form>
-                    <a href="" class="header__button header__login">Войти</a>
-                    <a href="" class="header__button header__registration">Регистрация</a>
+                    <button id="login-btn" class="header__button header__login">Войти</button>
+                    <button id="reg-btn" class="header__button header__registration">Регистрация</button>
                 </div>
             </div>
         </div>
@@ -71,6 +71,30 @@
         </div>
     </footer>
 </div>
+<div id="auth_bg" class="authorization hidden">
+    <form action="" id="login" class="form hidden">
+        <span class="close-form"><img src="img/plus.svg" alt="Закрыть"></span>
+        <p class="form__title">Войти</p>
+        <fieldset class="form__inputs">
+            <input type="email" name="email" id="login-email" placeholder="Email">
+            <input type="password" name="password" id="login-password" placeholder="Пароль">
+        </fieldset>
+        <button type="submit">Войти</button>
+        <a href="" class="forgot-password">Забыл пароль</a>
+    </form>
+    <form action="" id="registration" class="form hidden">
+        <span class="close-form"><img src="img/plus.svg" alt="Закрыть"></span>
+        <p class="form__title">Регистрация</p>
+        <fieldset class="form__inputs">
+            <input type="text" name="name" id="registration-name" placeholder="Имя">
+            <input type="email" name="email" id="registration-email" placeholder="Email">
+            <input type="password" name="password" id="registration-password" placeholder="Пароль">
+        </fieldset>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+
+<script src="js/authorization.js"></script>
 @yield('scripts')
 
 </body>
