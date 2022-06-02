@@ -32,6 +32,7 @@
                         <img src="img/search.svg" alt="Лупа">
                         <input type="search" name="search" id="search" placeholder="Поиск...">
                     </form>
+                    {{-- <span class="profile-name">Abobovich</span> --}}
                     <button id="login-btn" class="header__button header__login">Войти</button>
                     <button id="reg-btn" class="header__button header__registration">Регистрация</button>
                 </div>

@@ -7,6 +7,7 @@
     --green: #66cc66;
     --blue: #3e50cb;
     --aqua: #e3e6ff;
+    --gray-light: #bbbbbb;
 }
 
 * {
@@ -81,7 +82,7 @@ img {
     line-height: 23px;
     display: flex;
     align-items: center;
-    color: #bbbbbb;
+    color: var(--gray-light);;
 }
 .navigation__links:hover {
     color: var(--white);
@@ -101,6 +102,7 @@ img {
     position: relative;
     padding: 5px 20px 5px 40px;
     background: var(--gray);
+    height: 41px;
     border-radius: 5px;
 }
 .header__right {
@@ -481,4 +483,12 @@ fieldset{
 }
 .hidden{
     display: none;
+}
+
+.profile-name{
+    padding-left: 10px;
+    color: var(--gray-light);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
 }
