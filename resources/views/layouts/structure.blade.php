@@ -21,7 +21,7 @@
                     <a href="{{ route('index') }}"><img src="img/logo.svg" alt="Wurstach" class="header__logo"></a>
                     <nav class="navigation">
                         <ul class="navigation__list">
-                            <li class="navigation__item"><a href="" class="navigation__links">Каталог</a></li>
+                            <li class="navigation__item"><a href="{{route("catalog")}}" class="navigation__links">Каталог</a></li>
                             <li class="navigation__item"><a href="" class="navigation__links">Акции</a></li>
                             <li class="navigation__item"><a href="" class="navigation__links">О нас</a></li>
                         </ul>
@@ -47,7 +47,7 @@
             <div class="footer__wrapper">
                 <ul>
                     <li class="footer__list-title">Wurstach</li>
-                    <li class="footer__list-item"><a class="footer__list-link" href="">Каталог</a></li>
+                    <li class="footer__list-item"><a class="footer__list-link" href="{{route("catalog")}}">Каталог</a></li>
                     <li class="footer__list-item"><a class="footer__list-link" href="">Акции</a></li>
                     <li class="footer__list-item"><a class="footer__list-link" href="">О нас</a></li>
                 </ul>

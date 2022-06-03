@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 })->name("index");
+
+Route::get('/catalog', function () {
+    return view('catalog');
+})->name("catalog");

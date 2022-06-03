@@ -10,7 +10,7 @@
                     <h1 class="jb__title">Мечты о знаниях <span class="green">приводят</span> на Wurstach </h1>
                     <p class="jb__subtitle">Маркетплейс онлайн-курсов
                         от профессионалов</p>
-                    <a href="" class="jb__link">Перейти в каталог</a>
+                    <a href="{{route("catalog")}}" class="jb__link">Перейти в каталог</a>
                 </div>
                 <img src="img/jb.svg" alt="Учись вместе с нами">
             </section>
@@ -28,7 +28,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="" class="card__link"></a>
+                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
                     </div>
                     <div class="best__item card">
                         <div class="card__header">
@@ -132,11 +132,11 @@
                     </div>
                 </div>
             </section>
-            <section class="courses">
+            <section class="index-courses">
                 <h2 class="section-title">Wurstach Courses </h2>
                 <p class="section-subtitle">Подборка наших лучших <span class="green">БЕСПЛАТНЫХ</span> курсов</p>
-                <div class="courses__list">
-                    <div class="courses__item card">
+                <div class="index-courses__list">
+                    <div class="index-courses__item card">
                         <div class="card__header">
                             <span class="card__raiting">5 <img src="img/star.svg" alt=""></span>
                             <span></span>
@@ -150,7 +150,7 @@
                         </div>
                         <a href="" class="card__link"></a>
                     </div>
-                    <div class="courses__item card">
+                    <div class="index-courses__item card">
                         <div class="card__header">
                             <span class="card__raiting">5 <img src="img/star.svg" alt=""></span>
                             <span></span>
@@ -164,7 +164,7 @@
                         </div>
                         <a href="" class="card__link"></a>
                     </div>
-                    <div class="courses__item card">
+                    <div class="index-courses__item card">
                         <div class="card__header">
                             <span class="card__raiting">5 <img src="img/star.svg" alt=""></span>
                             <span></span>
