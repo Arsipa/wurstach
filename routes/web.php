@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/catalog', function () {
     return view('catalog');
 })->name("catalog");
+
+Route::get('/course', function () {
+    return view('course');
+})->name("course");

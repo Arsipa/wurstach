@@ -531,7 +531,6 @@ fieldset{
     color: var(--black);
     line-height: 120%;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 .course__link{
     position: absolute;
@@ -557,4 +556,31 @@ fieldset{
 }
 .faculty__courses{
     padding-top: 30px;
+}
+.faculty__courses::after{
+    content: '';
+    width: 400px;
+}
+.course__header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.course__raiting{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.courses__more{
+    width: 200px;
 }
