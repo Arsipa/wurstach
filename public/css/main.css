@@ -173,6 +173,7 @@ section {
     margin-bottom: 20px;
 }
 .jb__link {
+    text-align: center;
     color: var(--white);
     display: inline-block;
     font-weight: 500;
@@ -688,4 +689,17 @@ fieldset {
 .course-details__lessons-list li::before{
     content: '- ';
     font-weight: 500;
+}
+
+#buy-course_bg .form__title{
+    font-size: 20px;
+    text-align: left;
+}
+.buy-p{
+    font-size: 18px;
+    color: var(--black);
+}
+
+.buy-p span:first-child{
+    color: var(--gray-light)
 }

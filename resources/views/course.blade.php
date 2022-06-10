@@ -51,12 +51,27 @@
                     <aside class="course-details__aside">
                         <p class="course-details__price-title">Стоимость</p>
                         <p class="course-details__price">1200 ₽</p>
-                        <button class="course-details__buy-btn jb__link">Купить</button>
+                        <button class="course-details__buy-btn jb__link" id="buy_btn">Купить</button>
+                        {{-- <a href="" class="course-details__buy-btn jb__link">Учиться</a> --}}
                     </aside>
                 </div>
             </div>
         </section>
     </div>
 @endsection
+@section('popups')
+    <div id="buy-course_bg" class="authorization hidden">
+        <form action="" class="form">
+            <span class="close-form" id="buy-course_bg_close"><img src="img/plus.svg" alt="Закрыть"></span>
+            <p class="form__title">Оплата доступа к курсу "Базы данных для начинающих"</p>
+            <fieldset class="form__inputs">
+                <p class="buy-p"><span>Email: </span><span>isip_a.a.suvorov@mpt.ru</span></p>
+                <p class="buy-p"><span>Стоимость: </span><span>1200 ₽</span></p>
+            </fieldset>
+            <button type="submit">Оплатить</button>
+        </form>
+    </div>
+@endsection
 @section('scripts')
+    <script src="js/buy-course.js"></script>
 @endsection
