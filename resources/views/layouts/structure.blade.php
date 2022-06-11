@@ -22,10 +22,12 @@
                                 class="header__logo"></a>
                         <nav class="navigation">
                             <ul class="navigation__list">
+                                <li class="navigation__item"><a href="{{ route('index') }}"
+                                        class="navigation__links">Главная</a></li>
                                 <li class="navigation__item"><a href="{{ route('catalog') }}"
                                         class="navigation__links">Каталог</a></li>
-                                <li class="navigation__item"><a href="" class="navigation__links">Акции</a></li>
-                                <li class="navigation__item"><a href="" class="navigation__links">О нас</a></li>
+                                <li class="navigation__item"><a href="{{ route('about') }}" class="navigation__links">О
+                                        нас</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -85,7 +87,6 @@
                 <input type="password" name="password" id="login-password" placeholder="Пароль">
             </fieldset>
             <button type="submit">Войти</button>
-            <a href="" class="forgot-password">Забыл пароль</a>
         </form>
         <form action="" id="registration" class="form hidden">
             <span class="close-form"><img src="img/plus.svg" alt="Закрыть"></span>

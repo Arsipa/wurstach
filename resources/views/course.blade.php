@@ -52,7 +52,7 @@
                         <p class="course-details__price-title">Стоимость</p>
                         <p class="course-details__price">1200 ₽</p>
                         <button class="course-details__buy-btn jb__link" id="buy_btn">Купить</button>
-                        {{-- <a href="" class="course-details__buy-btn jb__link">Учиться</a> --}}
+                        <a href="{{route("lesson")}}" class="course-details__buy-btn jb__link">Учиться</a>
                     </aside>
                 </div>
             </div>
