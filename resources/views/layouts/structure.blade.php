@@ -33,7 +33,7 @@
                         </nav>
                     </div>
                     <div class="header__right">
-                        <form action="" class="header__form">
+                        <form action="{{route("index")}}" class="header__form">
                             <img src="img/search.svg" alt="Лупа">
                             <input type="search" name="search" id="search" placeholder="Поиск...">
                         </form>
@@ -54,33 +54,32 @@
                         <li class="footer__list-title">Wurstach</li>
                         <li class="footer__list-item"><a class="footer__list-link"
                                 href="{{ route('catalog') }}">Каталог</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="">Акции</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="">О нас</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link" href="{{route("about")}}">О нас</a></li>
                     </ul>
                     <ul>
                         <li class="footer__list-title">Условия</li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="">Условия пользования</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="">Условия
+                        <li class="footer__list-item"><a class="footer__list-link" href="#">Условия пользования</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link" href="#">Условия
                                 конфиденциальности</a></li>
                     </ul>
                     <ul>
                         <li class="footer__list-title">мы в сети</li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="">Вконтакте</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="">Телеграм</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="">Инстаграм</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link" href="#">Вконтакте</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link" href="#">Телеграм</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link" href="#">Инстаграм</a></li>
                     </ul>
                     <ul>
                         <li class="footer__list-title">Контакты</li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="">Помощь</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="">Контакты</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="">Вакансии</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link" href="#">Помощь</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link" href="#">Контакты</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link" href="#">Вакансии</a></li>
                     </ul>
                 </div>
             </div>
         </footer>
     </div>
     <div id="auth_bg" class="authorization hidden">
-        <form action="" id="login" class="form hidden">
+        <form action="{{route("profile")}}" id="login" class="form hidden">
             <span class="close-form"><img src="img/plus.svg" alt="Закрыть"></span>
             <p class="form__title">Войти</p>
             <fieldset class="form__inputs">
@@ -89,7 +88,7 @@
             </fieldset>
             <button type="submit">Войти</button>
         </form>
-        <form action="" id="registration" class="form hidden">
+        <form action="{{route("profile")}}" id="registration" class="form hidden">
             <span class="close-form"><img src="img/plus.svg" alt="Закрыть"></span>
             <p class="form__title">Регистрация</p>
             <fieldset class="form__inputs">

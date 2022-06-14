@@ -40,7 +40,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="" class="card__link"></a>
+                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
                     </div>
                     <div class="best__item card">
                         <div class="card__header">
@@ -52,7 +52,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="" class="card__link"></a>
+                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
                     </div>
                     <div class="best__item card">
                         <div class="card__header">
@@ -64,7 +64,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="" class="card__link"></a>
+                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
                     </div>
                     <div class="best__item card">
                         <div class="card__header">
@@ -76,7 +76,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="" class="card__link"></a>
+                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
                     </div>
                     <div class="best__item card">
                         <div class="card__header">
@@ -88,7 +88,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="" class="card__link"></a>
+                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
                     </div>
                 </div>
             </section>
@@ -100,7 +100,7 @@
                         <div class="question__header">
                             <div class="question__id green">01</div>
                             <div class="question__title">Как купить курс?</div>
-                            <button class="question__button"><img src="img/plus.svg" alt=""></button>
+                            <button class="question__button"><img src="img/plus.svg" alt="Открыть"></button>
                         </div>
                         <div class="question__main">
                             <p class="question__answer">Для покупки курса необходимо зарегистрироваться на сайте, затем
@@ -112,7 +112,7 @@
                         <div class="question__header">
                             <div class="question__id green">02</div>
                             <div class="question__title">Как восстановить пароль?</div>
-                            <button class="question__button"><img src="img/plus.svg" alt=""></button>
+                            <button class="question__button"><img src="img/plus.svg" alt="Открыть"></button>
                         </div>
                         <div class="question__main">
                             <p class="question__answer">Нажмите на кнопку "Забыли пароль?" при авторизации и следуйте
@@ -123,7 +123,7 @@
                         <div class="question__header">
                             <div class="question__id green">03</div>
                             <div class="question__title">Как получить сертификат по курсу?</div>
-                            <button class="question__button"><img src="img/plus.svg" alt=""></button>
+                            <button class="question__button"><img src="img/plus.svg" alt="Открыть"></button>
                         </div>
                         <div class="question__main">
                             <p class="question__answer">После оформления покупки вам станут доступны уроки. По окончанию
@@ -138,7 +138,7 @@
                 <div class="index-courses__list">
                     <div class="index-courses__item card">
                         <div class="card__header">
-                            <span class="card__raiting">5 <img src="img/star.svg" alt=""></span>
+                            <span class="card__raiting">5 <img src="img/star.svg" alt="Звезд"></span>
                             <span></span>
                             <span class="card__tag">42 курса</span>
                         </div>
@@ -148,11 +148,11 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="" class="card__link"></a>
+                        <a href="{{route("course")}}" class="card__link"></a>
                     </div>
                     <div class="index-courses__item card">
                         <div class="card__header">
-                            <span class="card__raiting">5 <img src="img/star.svg" alt=""></span>
+                            <span class="card__raiting">5 <img src="img/star.svg" alt="Звезд"></span>
                             <span></span>
                             <span class="card__tag">42 курса</span>
                         </div>
@@ -162,11 +162,11 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="" class="card__link"></a>
+                        <a href="{{route("course")}}" class="card__link"></a>
                     </div>
                     <div class="index-courses__item card">
                         <div class="card__header">
-                            <span class="card__raiting">5 <img src="img/star.svg" alt=""></span>
+                            <span class="card__raiting">5 <img src="img/star.svg" alt="Звезд"></span>
                             <span></span>
                             <span class="card__tag">42 курса</span>
                         </div>
@@ -176,7 +176,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="" class="card__link"></a>
+                        <a href="{{route("course")}}" class="card__link"></a>
                     </div>
                 </div>
             </section>

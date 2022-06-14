@@ -12,8 +12,8 @@
 
             <div class="center">
                 <ul class="pagination">
-                    <li><a href="" class="pagination__active">1</a></li>
-                    <li><a href="" >2</a></li>
+                    <li><a href="{{route("lesson")}}" class="pagination__active">1</a></li>
+                    <li><a href="{{route("lesson")}}" >2</a></li>
                 </ul>
             </div>
         </div>

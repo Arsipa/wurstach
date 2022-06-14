@@ -731,14 +731,15 @@ span.profile-name {
 h1.profile__name {
     font-size: 40px;
     font-weight: 700;
-    color: var(--black);
+    color: var(--main_text);
     margin-bottom: 20px;
 }
 
 .profile__courses-title {
     font-size: 20px;
     font-weight: 600;
-    color: var(--black);
+    color: var(--main_text);
+    
 }
 
 .about section > p {

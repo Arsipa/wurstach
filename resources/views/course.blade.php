@@ -10,9 +10,9 @@
                 <p class="course-details__subtitle">Теоретические и практические приемы проектирования баз данных для
                     начинающих разработчиков</p>
                 <div class="course-details__infographics">
-                    <p><img src="img/lessons.svg" alt=""><span>12 уроков</span></p>
-                    <p><img src="img/clock.svg" alt=""><span>5-7 минут</span></p>
-                    <p><img src="img/star.svg" alt="" class="star"><span>5</span></p>
+                    <p><img src="img/lessons.svg" alt="Уроков: "><span>12 уроков</span></p>
+                    <p><img src="img/clock.svg" alt="Время: "><span>5-7 минут</span></p>
+                    <p><img src="img/star.svg" alt="Звезд: " class="star"><span>5</span></p>
                 </div>
             </div>
         </section>
@@ -61,7 +61,7 @@
 @endsection
 @section('popups')
     <div id="buy-course_bg" class="authorization hidden">
-        <form action="" class="form">
+        <form action="https://robokassa.com" class="form">
             <span class="close-form" id="buy-course_bg_close"><img src="img/plus.svg" alt="Закрыть"></span>
             <p class="form__title">Оплата доступа к курсу "Базы данных для начинающих"</p>
             <fieldset class="form__inputs">

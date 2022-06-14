@@ -15,7 +15,7 @@
                                 <a href="{{ route('course') }}" class="course__link"></a>
                                 <div class="course__header">
                                     <p class="course__title">Базы данных для начинающих</p>
-                                    <p class="course__raiting">5 <img src="img/star.svg" alt=""></p>
+                                    <p class="course__raiting">5 <img src="img/star.svg" alt="Звезд"></p>
                                 </div>
                                 <p class="course__author">Кирилл Иванов</p>
                                 <p class="course__dcp">На курсе вы узнаете базовые принципы работы с БД и ознакомитесь с
