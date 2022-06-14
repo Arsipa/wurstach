@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon.svg" sizes="48x48" type="image/x-icon">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="" id="theme-file">
 
     <title>@yield('title')</title>
 </head>
@@ -99,9 +100,13 @@
             <button type="submit">Зарегистрироваться</button>
         </form>
     </div>
+    <div class="theme">
+        <button id="theme"><img src="img/moon.svg" alt="Поменять тему"></button>
+    </div>
     @yield('popups')
 
     <script src="js/authorization.js"></script>
+    <script src="js/change-theme.js"></script>
     @yield('scripts')
 
 </body>

@@ -11,6 +11,9 @@
 
     --body_bg: var(--white);
     --header_bg: var(--black);
+    --main_text: var(--black);
+    --button_bg: var(--black);
+    --button_text: var(--white);
 }
 
 * {
@@ -164,7 +167,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--black);
+    color: var(--main_text);
 }
 .jb__title {
     max-width: 620px;
@@ -186,23 +189,23 @@ section {
 }
 .jb__link {
     text-align: center;
-    color: var(--white);
+    color: var(--button_text);
     display: inline-block;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     padding: 15px 30px;
-    background: var(--black);
+    background: var(--button_bg);
     border-radius: 50px;
 }
 .section-title {
-    color: var(--black);
+    color: var(--main_text);
     font-weight: 700;
     font-size: 50px;
     line-height: 70px;
 }
 .section-subtitle {
-    color: var(--black);
+    color: var(--main_text);
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
@@ -318,12 +321,13 @@ h2.centered {
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
+    color: var(--main_text);
 }
 .question__title {
     font-weight: 700;
     font-size: 32px;
     line-height: 120%;
-    color: var(--black);
+    color: var(--main_text);
     flex-grow: 1;
     text-align: left;
 }
@@ -385,6 +389,7 @@ h2.centered {
     gap: 50px;
     justify-content: center;
 }
+
 .reviews__slider-inner {
     overflow: hidden;
     width: 900px;
@@ -520,6 +525,7 @@ span.profile-name {
     padding: 30px;
     border-radius: 16px;
     box-shadow: 1px 1px 10px -5px var(--blue);
+    background: var(--white);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -655,6 +661,7 @@ span.profile-name {
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 15px;
+    color: var(--main_text);
 }
 .course-details__info {
     display: flex;
@@ -663,6 +670,7 @@ span.profile-name {
     gap: 25px;
 }
 .course-details__paragraph {
+    color: var(--main_text);
     font-size: 20px;
     line-height: 120%;
     margin-bottom: 20px;
@@ -679,17 +687,21 @@ span.profile-name {
 .course-details__price-title {
     font-size: 34px;
     font-weight: 500;
+    color: var(--main_text);
 }
 .course-details__price {
     font-weight: 500;
     font-size: 30px;
+    color: var(--main_text);
 }
 
 .course-details__buy-btn {
     width: 100%;
     background: var(--green);
+    color: var(--white) !important;
 }
 .course-details__lessons-list {
+    color: var(--main_text);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -729,21 +741,21 @@ h1.profile__name {
     color: var(--black);
 }
 
-.about section>p{
+.about section > p {
     font-size: 26px;
     line-height: 120%;
-    color: var(--black);
+    color: var(--main_text);
     margin-bottom: 20px;
 }
 
-.pagination{
+.pagination {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 30px;
 }
 
-.pagination li a{
+.pagination li a {
     display: block;
     width: 50px;
     height: 50px;
@@ -754,7 +766,21 @@ h1.profile__name {
     color: var(--black);
     font-size: 26px;
 }
-.pagination li a:hover, .pagination .pagination__active{
+.pagination li a:hover,
+.pagination .pagination__active {
     background: var(--black);
     color: var(--white);
+}
+
+.theme {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

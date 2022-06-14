@@ -1,0 +1,7 @@
+:root {
+    --body_bg: var(--gray);
+    --main_text: var(--white);
+    --button_bg: var(--aqua);
+    --button_text: var(--black);
+
+}
