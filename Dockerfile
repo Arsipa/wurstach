@@ -11,8 +11,7 @@ WORKDIR /var/www
 RUN apt-get update
 RUN apt-get install -y libpq-dev \
     supervisor \
-    && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
-    && docker-php-ext-install pdo pdo_pgsql pgsql
+    && docker-php-ext-install pdo pdo_mysql mysqli
 
 #RUN apt-get install -y php-zip \
 #    && docker-php-ext-enable zip.so \
