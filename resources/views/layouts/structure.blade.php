@@ -27,13 +27,14 @@
                                         class="navigation__links">Главная</a></li>
                                 <li class="navigation__item"><a href="{{ route('catalog') }}"
                                         class="navigation__links">Каталог</a></li>
-                                <li class="navigation__item"><a href="{{ route('about') }}" class="navigation__links">О
+                                <li class="navigation__item"><a href="{{ route('about') }}"
+                                        class="navigation__links">О
                                         нас</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="header__right">
-                        <form action="{{route("index")}}" class="header__form">
+                        <form action="{{ route('index') }}" class="header__form">
                             <img src="img/search.svg" alt="Лупа">
                             <input type="search" name="search" id="search" placeholder="Поиск...">
                         </form>
@@ -54,7 +55,8 @@
                         <li class="footer__list-title">Wurstach</li>
                         <li class="footer__list-item"><a class="footer__list-link"
                                 href="{{ route('catalog') }}">Каталог</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="{{route("about")}}">О нас</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link" href="{{ route('about') }}">О нас</a>
+                        </li>
                     </ul>
                     <ul>
                         <li class="footer__list-title">Условия</li>
@@ -79,7 +81,7 @@
         </footer>
     </div>
     <div id="auth_bg" class="authorization hidden">
-        <form action="{{route("profile")}}" id="login" class="form hidden">
+        <form action="{{ route('profile') }}" id="login" class="form hidden">
             <span class="close-form"><img src="img/plus.svg" alt="Закрыть"></span>
             <p class="form__title">Войти</p>
             <fieldset class="form__inputs">
@@ -88,7 +90,7 @@
             </fieldset>
             <button type="submit">Войти</button>
         </form>
-        <form action="{{route("profile")}}" id="registration" class="form hidden">
+        <form action="{{ route('profile') }}" id="registration" class="form hidden">
             <span class="close-form"><img src="img/plus.svg" alt="Закрыть"></span>
             <p class="form__title">Регистрация</p>
             <fieldset class="form__inputs">

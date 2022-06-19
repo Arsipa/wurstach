@@ -10,7 +10,7 @@
                     <h1 class="jb__title">Мечты о знаниях <span class="green">приводят</span> на Wurstach </h1>
                     <p class="jb__subtitle">Маркетплейс онлайн-курсов
                         от профессионалов</p>
-                    <a href="{{route("catalog")}}" class="jb__link">Перейти в каталог</a>
+                    <a href="{{ route('catalog') }}" class="jb__link">Перейти в каталог</a>
                 </div>
                 <img src="img/jb.svg" alt="Учись вместе с нами">
             </section>
@@ -28,7 +28,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
+                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
                     </div>
                     <div class="best__item card">
                         <div class="card__header">
@@ -40,7 +40,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
+                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
                     </div>
                     <div class="best__item card">
                         <div class="card__header">
@@ -52,7 +52,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
+                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
                     </div>
                     <div class="best__item card">
                         <div class="card__header">
@@ -64,7 +64,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
+                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
                     </div>
                     <div class="best__item card">
                         <div class="card__header">
@@ -76,7 +76,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
+                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
                     </div>
                     <div class="best__item card">
                         <div class="card__header">
@@ -88,7 +88,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="{{route("catalog")}}#faculty-database" class="card__link"></a>
+                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
                     </div>
                 </div>
             </section>
@@ -148,7 +148,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="{{route("course")}}" class="card__link"></a>
+                        <a href="{{ route('course') }}" class="card__link"></a>
                     </div>
                     <div class="index-courses__item card">
                         <div class="card__header">
@@ -162,7 +162,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="{{route("course")}}" class="card__link"></a>
+                        <a href="{{ route('course') }}" class="card__link"></a>
                     </div>
                     <div class="index-courses__item card">
                         <div class="card__header">
@@ -176,7 +176,7 @@
                         <div class="card__footer">
                             <p class="card__title">Базы данных</p>
                         </div>
-                        <a href="{{route("course")}}" class="card__link"></a>
+                        <a href="{{ route('course') }}" class="card__link"></a>
                     </div>
                 </div>
             </section>
