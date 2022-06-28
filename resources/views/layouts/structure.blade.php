@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="" id="theme-file">
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title>@yield('title')</title>
 </head>
 
@@ -38,9 +40,12 @@
                             <img src="img/search.svg" alt="Лупа">
                             <input type="search" name="search" id="search" placeholder="Поиск...">
                         </form>
-                        {{-- <span class="profile-name">Abobovich</span> --}}
-                        <button id="login-btn" class="header__button header__login">Войти</button>
-                        <button id="reg-btn" class="header__button header__registration">Регистрация</button>
+                        @if (auth()->check())
+                        <span class="profile-name">{{ auth()->user()->name }}</span>
+                        @else
+                            <button id="login-btn" class="header__button header__login">Войти</button>
+                            <button id="reg-btn" class="header__button header__registration">Регистрация</button>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -55,12 +60,14 @@
                         <li class="footer__list-title">Wurstach</li>
                         <li class="footer__list-item"><a class="footer__list-link"
                                 href="{{ route('catalog') }}">Каталог</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="{{ route('about') }}">О нас</a>
+                        <li class="footer__list-item"><a class="footer__list-link" href="{{ route('about') }}">О
+                                нас</a>
                         </li>
                     </ul>
                     <ul>
                         <li class="footer__list-title">Условия</li>
-                        <li class="footer__list-item"><a class="footer__list-link" href="#">Условия пользования</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link" href="#">Условия
+                                пользования</a></li>
                         <li class="footer__list-item"><a class="footer__list-link" href="#">Условия
                                 конфиденциальности</a></li>
                     </ul>
@@ -81,22 +88,22 @@
         </footer>
     </div>
     <div id="auth_bg" class="authorization hidden">
-        <form action="{{ route('profile') }}" id="login" class="form hidden">
+        <form action="{{ route('login') }}" id="login" class="form hidden">
             <span class="close-form"><img src="img/plus.svg" alt="Закрыть"></span>
             <p class="form__title">Войти</p>
             <fieldset class="form__inputs">
-                <input type="email" name="email" id="login-email" placeholder="Email">
-                <input type="password" name="password" id="login-password" placeholder="Пароль">
+                <input type="email" name="email" id="login-email" placeholder="Email" required>
+                <input type="password" name="password" id="login-password" placeholder="Пароль" required>
             </fieldset>
             <button type="submit">Войти</button>
         </form>
-        <form action="{{ route('profile') }}" id="registration" class="form hidden">
+        <form action="{{ route('registration') }}" id="registration" class="form hidden">
             <span class="close-form"><img src="img/plus.svg" alt="Закрыть"></span>
             <p class="form__title">Регистрация</p>
             <fieldset class="form__inputs">
-                <input type="text" name="name" id="registration-name" placeholder="Имя">
-                <input type="email" name="email" id="registration-email" placeholder="Email">
-                <input type="password" name="password" id="registration-password" placeholder="Пароль">
+                <input type="text" name="name" id="registration-name" placeholder="Имя" required>
+                <input type="email" name="email" id="registration-email" placeholder="Email" required>
+                <input type="password" name="password" id="registration-password" placeholder="Пароль" required>
             </fieldset>
             <button type="submit">Зарегистрироваться</button>
         </form>

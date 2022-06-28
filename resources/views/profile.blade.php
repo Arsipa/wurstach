@@ -6,7 +6,7 @@
     <div class="inner">
         <section class="profile">
             <div class="container">
-                <h1 class="profile__name">Арсений Суворов</h1>
+                <h1 class="profile__name">{{auth()->user()->name}} <a href="{{route("logout")}}">Выйти</a></h1>
                 <div class="profile__courses">
                     <p class="profile__courses-title">Купленные курсы</p>
                     <section class="faculty">
