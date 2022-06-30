@@ -7,6 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Wursctach
+
+Wurstach - это образовательная платформа с возможностью регистрацией пользователей и покупкой курсов для обучения, разработанный на Laravel.
+Для запуска проекта необходимо скачать программу Docker и запустить файл debug_run.sh, после чего будет создан контейнер в котором можно работать с сайтом.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
