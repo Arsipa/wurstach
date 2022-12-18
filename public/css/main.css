@@ -357,6 +357,11 @@ h2.centered {
     transform: translate(-50%, -50%) rotate(45deg);
     filter: invert(100%);
 }
+.profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .review {
     border-radius: 25px;
     background: var(--aqua);

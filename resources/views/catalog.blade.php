@@ -5,60 +5,47 @@
 @section('content')
     <div class="container">
         <div class="inner">
-            <section class="faculty" id="faculty-database">
-                <h2 class="section-title">Базы данных</h2>
-                <div class="faculty__courses courses">
-                    <div class="course">
-                        <a href="{{ route('course') }}" class="course__link"></a>
-                        <div class="course__header">
-                            <p class="course__title">Базы данных для начинающих</p>
-                            <p class="course__raiting">5 <img src="img/star.svg" alt="Звезд"></p>
+            @foreach ($faculties as $item)
+                @if ($item->coursesCount() != 0)
+                    <section class="faculty">
+                        <h2 class="section-title">{{ $item->name }}</h2>
+                        <div class="faculty__courses courses">
+                            @foreach ($item->getCourses() as $course)
+                                <div class="course">
+                                    <a href="{{ route('course', ['course' => $course->id_course]) }}"
+                                        class="course__link"></a>
+                                    <div class="course__header">
+                                        <p class="course__title">{{ $course->name }}</p>
+                                        <p class="course__raiting">{{ $course->course_raiting }} <img src="img/star.svg"
+                                                alt="Звезд"></p>
+                                    </div>
+                                    <p class="course__author">{{$course->author->user->fio}}</p>
+                                    <p class="course__dcp">{{ $course->short_description }}</p>
+                                    <div class="course__footer">
+                                        <p class="course__price">
+                                            @if ($course->price == null)
+                                                Бесплатно
+                                            @else
+                                                {{ $course->price }} ₽
+                                            @endif
+                                        </p>
+                                        <p class="course__lessons">{{$course->lessonsCount()}} уроков</p>
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
-                        <p class="course__author">Кирилл Иванов</p>
-                        <p class="course__dcp">На курсе вы узнаете базовые принципы работы с БД и ознакомитесь с
-                            терминологией.</p>
-                        <div class="course__footer">
-                            <p class="course__price">1200 ₽</p>
-                            <p class="course__lessons">12 уроков</p>
+                        <div class="center">
+                            <button class="courses__more jb__link">Ещё</button>
                         </div>
-                    </div>
-                    <div class="course">
-                        <a href="{{ route('course') }}" class="course__link"></a>
-                        <div class="course__header">
-                            <p class="course__title">Базы данных для начинающих</p>
-                            <p class="course__raiting">5 <img src="img/star.svg" alt="Звезд"></p>
-                        </div>
-                        <p class="course__author">Кирилл Иванов</p>
-                        <p class="course__dcp">На курсе вы узнаете базовые принципы работы с БД и ознакомитесь с
-                            терминологией.</p>
-                        <div class="course__footer">
-                            <p class="course__price">1200 ₽</p>
-                            <p class="course__lessons">12 уроков</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="center">
-                    <button class="courses__more jb__link">Ещё</button>
-                </div>
-            </section>
-            <section class="faculty" id="faculty-scripts">
-                <h2 class="section-title">Скрипты</h2>
-                <div class="faculty__courses courses">
-                    <div class="course">
-                        <a href="{{ route('course') }}" class="course__link"></a>
-                        <div class="course__header">
-                            <p class="course__title">Основы Java-Script</p>
-                            <p class="course__raiting">4.5 <img src="img/star.svg" alt="Звезд"></p>
-                        </div>
-                        <p class="course__author">Антон Ваганов</p>
-                        <p class="course__dcp">Курс по основам javaScript. Познакомтесь ос скриптами поближе.</p>
-                        <div class="course__footer">
-                            <p class="course__price">800 ₽</p>
-                            <p class="course__lessons">4 урока</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    </section>
+                @else
+                    <section class="faculty">
+                        <h2 class="section-title">{{ $item->name }}</h2>
+                        <h2>Факультет пуст</h2>
+                    </section>
+                @endif
+            @endforeach
+
         </div>
     </div>
 @endsection

@@ -17,10 +17,14 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    protected $primaryKey = 'id_user';
+
     protected $fillable = [
-        'name',
+        'fio',
+        'nickname',
         'email',
         'password',
+        'id_role',
     ];
 
     public function setPasswordAttribute($password)
@@ -34,9 +38,7 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
-        'remember_token',
     ];
-
     /**
      * The attributes that should be cast.
      *

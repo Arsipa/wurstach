@@ -9,13 +9,13 @@ function getCookie(name) {
 
 function changeTheme(theme) {
     if (theme == "light") {
-        document.cookie = "theme=light";
-        button.querySelector("img").src = "img/moon.svg";
+        document.cookie = "theme=light;path=/";
+        button.querySelector("img").src = "/img/moon.svg";
         link.href = "";
     } else {
-        document.cookie = "theme=dark";
-        button.querySelector("img").src = "img/light.svg";
-        link.href = "css/dark-theme.css";
+        document.cookie = "theme=dark;path=/";
+        button.querySelector("img").src = "/img/light.svg";
+        link.href = "/css/dark-theme.css";
     }
 }
 

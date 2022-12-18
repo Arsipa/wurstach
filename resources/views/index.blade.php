@@ -18,78 +18,20 @@
                 <h2 class="section-title">Wurstach Best</h2>
                 <p class="section-subtitle">Подборка наших лучших факультетов</p>
                 <div class="best__list">
-                    <div class="best__item card">
-                        <div class="card__header">
-                            <span></span>
-                            <span class="card__tag">42 курса</span>
+                    @foreach ($faculties as $item)
+                        <div class="best__item card">
+                            <div class="card__header">
+                                <span></span>
+                                <span class="card__tag">Курсов: {{ $item->coursesCount() }}</span>
+                            </div>
+                            <div class="card__main">
+                            </div>
+                            <div class="card__footer">
+                                <p class="card__title">{{ $item->name }}</p>
+                            </div>
+                            <a href="{{ route('catalog') }}" class="card__link"></a>
                         </div>
-                        <div class="card__main">
-                        </div>
-                        <div class="card__footer">
-                            <p class="card__title">Базы данных</p>
-                        </div>
-                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
-                    </div>
-                    <div class="best__item card">
-                        <div class="card__header">
-                            <span></span>
-                            <span class="card__tag">42 курса</span>
-                        </div>
-                        <div class="card__main">
-                        </div>
-                        <div class="card__footer">
-                            <p class="card__title">Базы данных</p>
-                        </div>
-                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
-                    </div>
-                    <div class="best__item card">
-                        <div class="card__header">
-                            <span></span>
-                            <span class="card__tag">42 курса</span>
-                        </div>
-                        <div class="card__main">
-                        </div>
-                        <div class="card__footer">
-                            <p class="card__title">Базы данных</p>
-                        </div>
-                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
-                    </div>
-                    <div class="best__item card">
-                        <div class="card__header">
-                            <span></span>
-                            <span class="card__tag">42 курса</span>
-                        </div>
-                        <div class="card__main">
-                        </div>
-                        <div class="card__footer">
-                            <p class="card__title">Базы данных</p>
-                        </div>
-                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
-                    </div>
-                    <div class="best__item card">
-                        <div class="card__header">
-                            <span></span>
-                            <span class="card__tag">42 курса</span>
-                        </div>
-                        <div class="card__main">
-                        </div>
-                        <div class="card__footer">
-                            <p class="card__title">Базы данных</p>
-                        </div>
-                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
-                    </div>
-                    <div class="best__item card">
-                        <div class="card__header">
-                            <span></span>
-                            <span class="card__tag">42 курса</span>
-                        </div>
-                        <div class="card__main">
-                        </div>
-                        <div class="card__footer">
-                            <p class="card__title">Базы данных</p>
-                        </div>
-                        <a href="{{ route('catalog') }}#faculty-database" class="card__link"></a>
-                    </div>
+                    @endforeach
                 </div>
             </section>
             <section class="faq">
@@ -136,48 +78,21 @@
                 <h2 class="section-title">Wurstach Courses </h2>
                 <p class="section-subtitle">Подборка наших лучших <span class="green">БЕСПЛАТНЫХ</span> курсов</p>
                 <div class="index-courses__list">
-                    <div class="index-courses__item card">
-                        <div class="card__header">
-                            <span class="card__raiting">5 <img src="img/star.svg" alt="Звезд"></span>
-                            <span></span>
-                            <span class="card__tag">42 курса</span>
+                    @foreach ($courses as $item)
+                        <div class="index-courses__item card">
+                            <div class="card__header">
+                                <span class="card__raiting">{{$item->course_raiting}} <img src="img/star.svg" alt="Звезд"></span>
+                                <span></span>
+                            </div>
+                            <div class="card__main">
+                                <p><span>Занятий: </span>{{$item->lessonsCount()}}</p>
+                            </div>
+                            <div class="card__footer">
+                                <p class="card__title">{{$item->name}}</p>
+                            </div>
+                            <a href="{{ route('course', ['course' => $item->id_course]) }}" class="card__link"></a>
                         </div>
-                        <div class="card__main">
-                            <p><span>Занятий: </span>15</p>
-                        </div>
-                        <div class="card__footer">
-                            <p class="card__title">Базы данных</p>
-                        </div>
-                        <a href="{{ route('course') }}" class="card__link"></a>
-                    </div>
-                    <div class="index-courses__item card">
-                        <div class="card__header">
-                            <span class="card__raiting">5 <img src="img/star.svg" alt="Звезд"></span>
-                            <span></span>
-                            <span class="card__tag">42 курса</span>
-                        </div>
-                        <div class="card__main">
-                            <p><span>Занятий: </span>15</p>
-                        </div>
-                        <div class="card__footer">
-                            <p class="card__title">Базы данных</p>
-                        </div>
-                        <a href="{{ route('course') }}" class="card__link"></a>
-                    </div>
-                    <div class="index-courses__item card">
-                        <div class="card__header">
-                            <span class="card__raiting">5 <img src="img/star.svg" alt="Звезд"></span>
-                            <span></span>
-                            <span class="card__tag">42 курса</span>
-                        </div>
-                        <div class="card__main">
-                            <p><span>Занятий: </span>15</p>
-                        </div>
-                        <div class="card__footer">
-                            <p class="card__title">Базы данных</p>
-                        </div>
-                        <a href="{{ route('course') }}" class="card__link"></a>
-                    </div>
+                    @endforeach
                 </div>
             </section>
             <section class="reviews">

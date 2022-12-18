@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.svg" sizes="48x48" type="image/x-icon">
+    <link rel="icon" href="/favicon.svg" sizes="48x48" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="" id="theme-file">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -21,27 +21,26 @@
             <div class="container">
                 <div class="header__wrapper">
                     <div class="header__left">
-                        <a href="{{ route('index') }}"><img src="img/logo.svg" alt="Wurstach"
-                                class="header__logo"></a>
+                        <a href="{{ route('index') }}"><img src="/img/logo.svg" alt="Wurstach" class="header__logo"></a>
                         <nav class="navigation">
                             <ul class="navigation__list">
                                 <li class="navigation__item"><a href="{{ route('index') }}"
                                         class="navigation__links">Главная</a></li>
                                 <li class="navigation__item"><a href="{{ route('catalog') }}"
                                         class="navigation__links">Каталог</a></li>
-                                <li class="navigation__item"><a href="{{ route('about') }}"
-                                        class="navigation__links">О
+                                <li class="navigation__item"><a href="{{ route('about') }}" class="navigation__links">О
                                         нас</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="header__right">
                         <form action="{{ route('index') }}" class="header__form">
-                            <img src="img/search.svg" alt="Лупа">
+                            <img src="/img/search.svg" alt="Лупа">
                             <input type="search" name="search" id="search" placeholder="Поиск...">
                         </form>
                         @if (auth()->check())
-                        <span class="profile-name">{{ auth()->user()->name }}</span>
+                            <a href="{{ route('profile') }}" class="profile-link"><span
+                                    class="profile-name">{{ auth()->user()->nickname }}</span></a>
                         @else
                             <button id="login-btn" class="header__button header__login">Войти</button>
                             <button id="reg-btn" class="header__button header__registration">Регистрация</button>
@@ -89,7 +88,7 @@
     </div>
     <div id="auth_bg" class="authorization hidden">
         <form action="{{ route('login') }}" id="login" class="form hidden">
-            <span class="close-form"><img src="img/plus.svg" alt="Закрыть"></span>
+            <span class="close-form"><img src="/img/plus.svg" alt="Закрыть"></span>
             <p class="form__title">Войти</p>
             <fieldset class="form__inputs">
                 <input type="email" name="email" id="login-email" placeholder="Email" required>
@@ -98,10 +97,10 @@
             <button type="submit">Войти</button>
         </form>
         <form action="{{ route('registration') }}" id="registration" class="form hidden">
-            <span class="close-form"><img src="img/plus.svg" alt="Закрыть"></span>
+            <span class="close-form"><img src="/img/plus.svg" alt="Закрыть"></span>
             <p class="form__title">Регистрация</p>
             <fieldset class="form__inputs">
-                <input type="text" name="name" id="registration-name" placeholder="Имя" required>
+                <input type="text" name="I_user" id="registration-name" placeholder="Имя" required>
                 <input type="email" name="email" id="registration-email" placeholder="Email" required>
                 <input type="password" name="password" id="registration-password" placeholder="Пароль" required>
             </fieldset>
@@ -109,12 +108,12 @@
         </form>
     </div>
     <div class="theme">
-        <button id="theme"><img src="img/moon.svg" alt="Поменять тему"></button>
+        <button id="theme"><img src="/img/moon.svg" alt="Поменять тему"></button>
     </div>
     @yield('popups')
 
-    <script src="js/authorization.js"></script>
-    <script src="js/change-theme.js"></script>
+    <script src="/js/authorization.js"></script>
+    <script src="/js/change-theme.js"></script>
     @yield('scripts')
 
 </body>

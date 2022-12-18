@@ -19,7 +19,6 @@ if [[ "$APP_KEY" == '' ]]; then
 fi
 
 sleep 10
-php artisan migrate
 php artisan db:seed
 php artisan storage:link
 chown www-data:www-data -R /var/www/storage/app
